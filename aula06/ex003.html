@@ -28,11 +28,19 @@
 
     <script>
 
-      var n1 = parseInt(window.prompt("Digite um número")); // string
-      var n2 = parseInt(window.prompt("Digite outro número")); // string
+      /* Tipos de comandos para converter uma string em números inteiros, reais - (float), etc.
+            parseInt - Trasnforma a string em número inteiro
+            parseFloat - Transforma a string em número real - (Float)
+            Number - Transforma a string no formato de número recebido pelo usuário
+            elemento.ToString() - Trasnforma o elemento recebido em string
+            String() - Trasnforma o elemento recebido em string
+      */
+
+      var n1 = Number(window.prompt("Digite um número")); // string convertida para numero!
+      var n2 = Number(window.prompt("Digite outro número")); // string convertida para numero!
       var soma = n1 + n2;
 
-      alert("O resultado da soma é: " + soma)
+      alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
 
       // (number + number) "+" serve pra concatenação.
       // (string + string) "+" também serve para a soma.
